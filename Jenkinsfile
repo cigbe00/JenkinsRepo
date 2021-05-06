@@ -18,6 +18,9 @@ pipeline {
                                                              if (RELEASE_BUILD.equals(true)) {
                                                                      echo "release build is true"
                                                              }
+                                                             else {
+                                                                     echo "release is false"
+                                                             }
                                                      }
                                                      echo "${RELEASE_BUILD}"
                                             }
