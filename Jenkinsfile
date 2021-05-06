@@ -14,10 +14,11 @@ pipeline {
 
                                              steps {
                                                      echo 'compiling java code'
-                                                     sh 'pwd'
-                                                     sh 'ls'
+                                                     
                                                      script {
                                                              sh 'cd com/chukwudi/example'
+                                                             sh 'pwd'
+                                                             sh 'ls'
                                                              if (params.RELEASE_BUILD == true) {
                                                                      echo "release build is true"
                                                                      sh 'javac MagicBuilder.java MessageBuilder.jav'
