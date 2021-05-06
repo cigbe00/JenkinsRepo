@@ -15,7 +15,7 @@ pipeline {
                                              steps {
                                                      echo 'compiling java code'
                                                      script {
-                                                             if (RELEASE_BUILD.equals(true)) {
+                                                             if (params.RELEASE_BUILD == true) {
                                                                      echo "release build is true"
                                                              }
                                                              else {
