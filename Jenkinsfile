@@ -21,7 +21,7 @@ pipeline {
                                                              sh 'ls'
                                                              if (params.RELEASE_BUILD == true) {
                                                                      echo "release build is true"
-                                                                     sh 'javac MagicBuilder.java MessageBuilder.java'
+                                                                     sh 'javac cd ${WORKSPACE}/com/chukwudi/example/MagicBuilder.java ${WORKSPACE}/com/chukwudi/example/MessageBuilder.java'
                                                                      sh 'mvn test'
                                                              }
                                                              else {
