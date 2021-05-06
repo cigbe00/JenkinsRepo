@@ -15,11 +15,16 @@ pipeline {
                                              steps {
                                                      echo 'compiling java code'
                                                      script {
+                                                             sh 'cd com/chukwudi/example'
                                                              if (params.RELEASE_BUILD == true) {
                                                                      echo "release build is true"
+                                                                     sh 'javac MagicBuilder.java MessageBuilder.jav'
+                                                                     sh 'mvn test'
                                                              }
                                                              else {
                                                                      echo "release is false"
+                                                                     sh 'javac MagicBuilder.java MessageBuilder.jav'
+                                                                     sh 'mvn -Dtest=TestMessageBuilder'
                                                              }
                                                      }
                                                      echo "${RELEASE_BUILD}"
