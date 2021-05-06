@@ -22,7 +22,7 @@ pipeline {
                          stage(' tar and upload') {
                                          steps {
                                                  sh 'pwd'
-                                                 sh 'jar cvf jenkinsscale.jar bin/driver_classes/NumericConversion.class'
+                                                 //sh 'jar cvf jenkinsscale.jar bin/driver_classes/NumericConversion.class'
                                          }
 
                          }
