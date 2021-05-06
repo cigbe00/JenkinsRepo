@@ -14,7 +14,7 @@ pipeline {
 
                                              steps {
                                                      echo 'compiling java code'
-                                                     echo "${RELEASE_BUILD}"
+                                                     echo "${RELEASE BUILD}"
                                             }
 
                          }
