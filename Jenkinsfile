@@ -14,6 +14,11 @@ pipeline {
 
                                              steps {
                                                      echo 'compiling java code'
+                                                     script {
+                                                             if (RELEASE_BUILD.equals(true)) {
+                                                                     echo "release build is true"
+                                                             }
+                                                     }
                                                      echo "${RELEASE_BUILD}"
                                             }
 
