@@ -16,12 +16,12 @@ pipeline {
                                                      echo 'compiling java code'
                                                      
                                                      script {
-                                                             sh 'cd com/chukwudi/example'
+                                                             sh 'cd ${WORKSPACE}/com/chukwudi/example'
                                                              sh 'pwd'
                                                              sh 'ls'
                                                              if (params.RELEASE_BUILD == true) {
                                                                      echo "release build is true"
-                                                                     sh 'javac MagicBuilder.java MessageBuilder.jav'
+                                                                     sh 'javac ${WORKSPACE}/com/chukwudi/example/MagicBuilder.java ${WORKSPACE}/com/chukwudi/example/MessageBuilder.jav'
                                                                      sh 'mvn test'
                                                              }
                                                              else {
