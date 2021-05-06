@@ -14,6 +14,8 @@ pipeline {
 
                                              steps {
                                                      echo 'compiling java code'
+                                                     sh 'pwd'
+                                                     sh 'ls'
                                                      script {
                                                              sh 'cd com/chukwudi/example'
                                                              if (params.RELEASE_BUILD == true) {
