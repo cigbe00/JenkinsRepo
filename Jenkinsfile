@@ -29,7 +29,7 @@ pipeline {
                                                              }
                                                              else {
                                                                      echo "release is false"
-                                                                     sh 'javac ${WORKSPACE}/com/chukwudi/example/MagicBuilder.java MessageBuilder.java'
+                                                                     sh 'javac ${WORKSPACE}/com/chukwudi/example/MagicBuilder.java'
                                                                      sh 'mvn -Dtest=TestMessageBuilder'
                                                              }
                                                      }
