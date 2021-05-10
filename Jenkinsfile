@@ -41,6 +41,7 @@ pipeline {
                          stage(' tar and upload') {
                                          steps {
                                                  sh 'pwd'
+                                                 echo 'testing multi-branch'
                                                  //sh 'jar cvf jenkinsscale.jar bin/driver_classes/NumericConversion.class'
                                          }
 
