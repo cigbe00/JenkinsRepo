@@ -1,4 +1,4 @@
-package com.chukwudi.example;
+package com.chukwudi.examples;
 
 public class MagicBuilder {
 
