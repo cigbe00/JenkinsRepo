@@ -12,6 +12,16 @@ pipeline {
                                              }
 
                          }
+                        
+                         stage('Code Checkout') {
+                                    steps {
+                                        checkout([
+                                            $class: 'GitSCM', 
+                                            branches: [[name: '*/main']], 
+                                            userRemoteConfigs: [[url: 'https://github.com/cigbe00/JenkinsRepo.git']]
+                                        ])
+                                    }
+                        }
 
                          stage('Compile source') {
 
