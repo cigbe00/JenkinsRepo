@@ -7,6 +7,7 @@ public class MessageBuilder {
     }
 
     public static int getNumber10(){
+        System.out.println("returning 10 as a digit");
         return 10;
     }
 
