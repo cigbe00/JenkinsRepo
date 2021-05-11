@@ -19,7 +19,7 @@ pipeline {
                                                      echo 'compiling java code'
                                                      
                                                      script {
-                                                             sh 'cd ${WORKSPACE}/com/chukwudi/example'
+                                                             //sh 'cd ${WORKSPACE}/com/chukwudi/example'
                                                              sh 'pwd'
                                                              sh 'ls'
                                                              if (params.RELEASE_BUILD == true) {
