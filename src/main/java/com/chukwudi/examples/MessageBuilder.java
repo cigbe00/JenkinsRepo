@@ -1,4 +1,4 @@
-package com.chukwudi.example;
+package com.chukwudi.examples;
 
 public class MessageBuilder {
 
@@ -7,6 +7,7 @@ public class MessageBuilder {
     }
 
     public static int getNumber10(){
+        System.out.println("returning 10");
         return 10;
     }
 

@@ -24,13 +24,13 @@ pipeline {
                                                              sh 'ls'
                                                              if (params.RELEASE_BUILD == true) {
                                                                      echo "release build is true"
-                                                                     sh 'javac ${WORKSPACE}/com/chukwudi/example/MagicBuilder.java ${WORKSPACE}/com/chukwudi/example/MessageBuilder.java'
+                                                                     sh 'javac ${WORKSPACE}/src/main/java/com/chukwudi/examples/MessageBuilder.java ${WORKSPACE}/src/main/java/com/chukwudi/examples/MagicBuilder.java'
                                                                      sh 'mvn test'
                                                              }
                                                              else {
                                                                      echo "release is false"
-                                                                     sh 'javac ${WORKSPACE}/com/chukwudi/example/MagicBuilder.java'
-                                                                     sh 'mvn -Dtest=TestMessageBuilder'
+                                                                     sh 'javac ${WORKSPACE}/src/main/java/com/chukwudi/examples/MessageBuilder.java'
+                                                                     sh 'mvn -Dtest=TestMessageBuild test'
                                                              }
                                                      }
                                                      echo "${RELEASE_BUILD}"
