@@ -1,10 +1,10 @@
-package com.chukwudi.example;
+package com.chukwudi.examples;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestMessageBuilder {
+public class TestMessageBuild {
 
     @Test
     public void testHelloWorld() {
