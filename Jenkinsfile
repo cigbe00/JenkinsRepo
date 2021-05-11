@@ -33,7 +33,7 @@ pipeline {
                                                                      sh 'mvn -Dtest=TestMessageBuild test'
                                                              }
                                                      }
-                                                     echo "${RELEASE_BUILD}"
+                                                    // echo "${RELEASE_BUILD}"
                                             }
 
                          }
